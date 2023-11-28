@@ -1,9 +1,7 @@
 import logo from '../../assets/logo.png';
-
-
-export const cesta = {
+const cesta = {
     topo: {
-        titulo: "Detalhe da cesta"
+        titulo: "Detalhes da cesta"
       },
       
       detalhes: {
@@ -14,3 +12,5 @@ export const cesta = {
         preco: "R$ 40,00"
       }
 }
+
+export default cesta 

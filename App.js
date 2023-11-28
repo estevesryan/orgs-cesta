@@ -3,6 +3,8 @@ import Cesta from './src/telas/Cesta';
 import { useFonts,
          Montserrat_400Regular,
          Montserrat_700Bold  } from '@expo-google-fonts/montserrat';
+         
+import mock from './src/mocks/Cesta'
 
 export default function App() {
   const [fontCarregada] = useFonts({
@@ -17,7 +19,7 @@ export default function App() {
   return (
     <View >
       <StatusBar />
-      <Cesta />
+      <Cesta {...mock} />
     </View>
   );
 }

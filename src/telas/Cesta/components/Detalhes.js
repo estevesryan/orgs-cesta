@@ -2,17 +2,17 @@ import React from "react";
 
 import Texto from "../../../components/Texto";
 import { StyleSheet, View, Image } from "react-native";
-import { cesta } from '../../../mocks/Cesta'
+import cesta from "../../../mocks/Cesta";
 
-export default function Detalhes() {
+export default function Detalhes({nome, logo, nomeFazenda, descricao, preco}) {
     return <>
-        <Texto style={estilos.nome}>{cesta.detalhes.nome}</Texto>
+        <Texto style={estilos.nome}>{nome}</Texto>
             <View style={estilos.fazenda}>
-                <Image style={estilos.imagemFazenda} source={cesta.detalhes.logo} />
-                <Texto style={estilos.nomeFazenda}>{cesta.detalhes.nomeFazenda}</Texto>
+                <Image style={estilos.imagemFazenda} source={logo} />
+                <Texto style={estilos.nomeFazenda}>{nomeFazenda}</Texto>
             </View>
-            <Texto style={estilos.descricao}>{cesta.detalhes.descricao}</Texto>
-        <Texto style={estilos.preco}>{cesta.detalhes.preco}</Texto>
+            <Texto style={estilos.descricao}>{descricao}</Texto>
+        <Texto style={estilos.preco}>{preco}</Texto>
     </>
 }
 
